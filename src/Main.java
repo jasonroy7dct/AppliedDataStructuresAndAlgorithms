@@ -4,9 +4,7 @@ import assignment3.Quicksort;
 import assignment4.City;
 import assignment4.Graph;
 import assignment5.RecursionAndBacktracking;
-import java.io.FileReader;
 import java.io.IOException;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -143,14 +141,14 @@ public class Main {
      * Explanation: s2 contains one permutation of s1 ("ba").
      */
     System.out.println("Assignment5 Task-1 Example 1 Output should be true: "
-        + recursionAndBacktracking.checkPermutations("ab", "eidbaooo"));
+        + recursionAndBacktracking.checkPermutationsWithSlidingWindows("ab", "eidbaooo"));
     /**
      * Example 2:
      * Input: s1 = "ab", s2 = "eidboaoo"
      * Output: false
      */
     System.out.println("Assignment5 Task-1 Example 2 Output should be false: "
-        + recursionAndBacktracking.checkPermutations("ab", "eidboaoo"));
+        + recursionAndBacktracking.checkPermutationsWithSlidingWindows("ab", "eidboaoo"));
 
     // Assignment5 Task-2
     /**
@@ -166,7 +164,7 @@ public class Main {
      * Input: 1 1 1 1 1 1 1 1
      * Output: 7
      */
-    int[] exampleTwo = {1, 1, 1, 4, 5, 1, 1, 1};
+    int[] exampleTwo = {1, 1, 1, 1, 1, 1, 1, 1};
     System.out.println("Assignment5 Task-2 Example 2 Output should be 7: "
         + recursionAndBacktracking.findMinNumberOfMoves(exampleTwo));
   }
